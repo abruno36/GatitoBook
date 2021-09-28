@@ -22,7 +22,9 @@
     "@angular/router": "~12.2.0",
     "bootstrap": "^4.6.0",
     "font-awesome": "^4.7.0",
+    "modulo": "0.0.3",
     "rxjs": "~6.6.0",
+    "sqlite3": "^5.0.2",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },

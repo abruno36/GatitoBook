@@ -3,3 +3,12 @@
     margin: 3rem auto;
     text-align: center;
 }
+
+@media(max-width: 450px) {
+    .home {
+        width: 60%;
+    }
+    img {
+        width: 80%;
+    }
+}
