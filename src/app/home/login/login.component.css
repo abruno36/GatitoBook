@@ -1,11 +1,10 @@
 .login {
-    width: 60%;
-    margin: -33px auto;
+    width: 100%;
     text-align: center;
 }
 
 @media(max-width: 450px) {
     .login {
-        width: 30%;
+        width: 80%;
     }
 }
