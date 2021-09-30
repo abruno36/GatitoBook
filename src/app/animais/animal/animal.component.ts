@@ -21,7 +21,7 @@ export class AnimalComponent implements OnInit {
     }
   }
 
-  get url(): string {
+  getUrl(): string {
     return this.urlOriginal;
   }
   
