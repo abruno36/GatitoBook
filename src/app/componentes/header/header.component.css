@@ -1,0 +1,29 @@
+.home {
+    width: 65%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+span {
+    margin: 0.4rem auto;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(141, 139, 139);
+    padding-left: 3rem;
+    font-size: 1.2rem;
+}
+
+.login {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.logout {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
