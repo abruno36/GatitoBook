@@ -18,25 +18,22 @@ export class NovoUsuarioComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private novoUsuarioService: NovoUsuarioService,
-    private usuarioExistenteServive: UsuarioExisteService,
+    private usuarioExistenteService: UsuarioExisteService,
     private router: Router
   ) {}
 
  ngOnInit(): void {
 
-  const formOptions: AbstractControlOptions = {}
     this.novoUsuarioForm = this.formBuilder.group(
       {
         email:    ['', [Validators.required, Validators.email, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]],
         fullName: ['', [Validators.required, Validators.minLength(4)]],
-        userName: [
-          '',
-          [minusculoValidator],
-          [this.usuarioExistenteServive.usuarioJaExite()],
-        ],
+        userName: ['', [minusculoValidator], [this.usuarioExistenteService.usuarioJaExite()]],
         password: [''],
+      },
+      {
         validators: [usuarioSenhaIguaisValidator],
-      },formOptions
+      }
     );
   }
 

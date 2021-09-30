@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FooterComponent } from '../footer/footer.component';
 import { HomeComponent } from './home.component';
 import { LoginComponent } from './login/login.component';
 import { NovoUsuarioComponent } from './novo-usuario/novo-usuario.component';
@@ -8,6 +9,7 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
+    
     children:[
       {
         path: '',
