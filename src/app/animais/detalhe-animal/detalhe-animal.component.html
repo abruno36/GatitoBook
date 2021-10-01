@@ -1,10 +1,18 @@
-<div class="bg-white border" *ngIf="animal$ | async as animal">
-    <div class="col-lg-8">
+<div class="bg-white" *ngIf="animal$ | async as animal">
+    <mat-card class="col-md-3 home mt-4">
         <app-animal [url]="animal.url" [descricao]="animal.description"></app-animal>
-    </div>
-    <div class="col-lg-4">
+        <button (click)="voltarLista()" class="mat-elevation-z8 button" mat-stroked-button color="warn"> VOLTAR LISTA DE ANIMAIS </button>
+    </mat-card>
+    <mat-card class="col-md-3 home1">
         <small>
-            <p  class="text-left break-word">{{animal.description}}</p>
-        </small>
-    </div>
+                <p class="text-left break-word">{{animal.description}}</p>
+                <i (click)="curtir()" class="fa fa-heart-o fa-2x mr-2 pull-left">{{animal.likes}}</i>  
+                <i class="fa fa-comment-o fa-2x mr-2 pull-left">{{animal.comments}}</i>
+                <i (click)="excluir()" class="fa fa-trash-o fa-2x mr-2 pull-right"></i> 
+            </small>
+        <app-comentarios [id]="animalId" *ngIf="animal.allowComments; else warning"></app-comentarios>
+        <ng-template #warning>
+            <p>Usuário não pode comentar o animal</p>
+        </ng-template>
+    </mat-card>
 </div>

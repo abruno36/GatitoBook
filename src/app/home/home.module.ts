@@ -11,6 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MensagemModule } from '../componentes/mensagem/mensagem.module';
 import { NovoUsuarioComponent } from './novo-usuario/novo-usuario.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button'; 
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
             MatCardModule, 
             MatToolbarModule,
             FormsModule, 
-            MensagemModule, 
+            MensagemModule,
+            MatButtonModule, 
             ReactiveFormsModule],
   exports: [HomeComponent]
   

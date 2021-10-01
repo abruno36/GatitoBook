@@ -1,0 +1,30 @@
+.home {
+    width: 60%;
+    margin: 3rem auto auto 400px;
+    text-align: left;
+}
+
+.home1 {
+    width: 40%;
+    height: 70%;
+    margin: -400px 0 0 1000px;
+    text-align: left;
+}
+
+@media(max-width: 450px) {
+    .home {
+        width: 70%;
+        margin: 3rem auto;
+        text-align: left;
+    }
+    .home1 {
+        width: 70%;
+        margin: 3rem auto;
+        text-align: left;
+    }
+}
+
+.button {
+    margin: 1rem auto auto 6.5rem;
+    text-align: left;
+}
