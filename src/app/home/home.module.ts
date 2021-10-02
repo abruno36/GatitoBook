@@ -5,25 +5,16 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { LoginComponent } from './login/login.component';
 
-import { MatCardModule } from '@angular/material/card';
 
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MensagemModule } from '../componentes/mensagem/mensagem.module';
 import { NovoUsuarioComponent } from './novo-usuario/novo-usuario.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button'; 
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
   declarations: [HomeComponent, LoginComponent, NovoUsuarioComponent],
   imports: [CommonModule, 
             HomeRoutingModule, 
-            MatCardModule, 
-            MatToolbarModule,
-            FormsModule, 
-            MensagemModule,
-            MatButtonModule, 
-            ReactiveFormsModule],
+            SharedModule],
   exports: [HomeComponent]
   
 })

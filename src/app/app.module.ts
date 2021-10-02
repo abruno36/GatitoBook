@@ -12,12 +12,14 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { AutenticacaoModule } from './autenticacao/autenticacao.module';
 import { MatButtonModule } from '@angular/material/button';
+import { MenuComponent } from './componentes/menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
   FooterComponent,
-  HeaderComponent],
+  HeaderComponent,
+  MenuComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -12,6 +12,7 @@ import { MensagemModule } from '../componentes/mensagem/mensagem.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -26,10 +27,7 @@ import { MatButtonModule } from '@angular/material/button';
     CommonModule,
     AnimaisRoutingModule,
     CartaoModule,
-    MensagemModule,
-    MatCardModule,
-    ReactiveFormsModule,
-    MatButtonModule
+    SharedModule
   ]
 })
 export class AnimaisModule { }
