@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { SharedModule } from '../shared/shared.module';
+import { NovoAnimalComponent } from './novo-animal/novo-animal.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { SharedModule } from '../shared/shared.module';
     AnimalComponent,
     GradeFotosAnimaisComponent,
     DetalheAnimalComponent,
-    ComentariosComponent
+    ComentariosComponent,
+    NovoAnimalComponent
   ],
   imports: [
     CommonModule,

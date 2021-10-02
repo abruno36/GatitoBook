@@ -11,21 +11,31 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { AutenticacaoModule } from './autenticacao/autenticacao.module';
+import { MatIconModule } from '@angular/material/icon'; 
 import { MatButtonModule } from '@angular/material/button';
+import { MatListModule } from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { MenuComponent } from './componentes/menu/menu.component';
+import { NavComponent } from './componentes/nav/nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
   FooterComponent,
   HeaderComponent,
-  MenuComponent],
+  MenuComponent,
+  NavComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatCardModule,
     HttpClientModule,
+    MatIconModule, 
+    MatButtonModule, 
+    MatSidenavModule,
+    MatListModule,
     MatToolbarModule,
+    
     BrowserAnimationsModule,
     AutenticacaoModule,
     MatButtonModule
