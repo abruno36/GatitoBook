@@ -1,9 +1,9 @@
 <div class="bg-white" *ngIf="animal$ | async as animal">
     <mat-card class="col-md-3 home mt-4">
         <app-animal [url]="animal.url" [descricao]="animal.description"></app-animal>
-        <button (click)="voltarLista()" class="mat-elevation-z8 button" mat-stroked-button color="warn"> VOLTAR LISTA DE ANIMAIS </button>
+        <button (click)="voltarLista()" class="button" mat-stroked-button color="accent"> VOLTAR </button>
     </mat-card>
-    <mat-card class="col-md-3 home1">
+    <mat-card class="col-md-2 home1">
         <small>
                 <p class="text-left break-word">{{animal.description}}</p>
                 <i (click)="curtir()" class="fa fa-heart-o fa-2x mr-2 pull-left">{{animal.likes}}</i>  

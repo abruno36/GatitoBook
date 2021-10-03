@@ -1,5 +1,6 @@
 .container {
     height: 85%;
+    display: initial;
 }
 
 i {
@@ -8,4 +9,9 @@ i {
 
 button {
     margin: 1rem auto0 1rem;
+}
+
+.sidenav {
+    position: fixed;
+    overflow: auto;
 }

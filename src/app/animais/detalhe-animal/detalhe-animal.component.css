@@ -1,13 +1,12 @@
 .home {
-    width: 60%;
-    margin: 3rem auto auto 330px;
+    width: 70%;
+    margin: 120px 0 0 220px;
     text-align: left;
 }
 
 .home1 {
-    width: 40%;
-    height: 70%;
-    margin: -400px 0 0 880px;
+    width: 70%;
+    margin: -400px 0 0 900px;
     text-align: left;
 }
 
@@ -25,6 +24,6 @@
 }
 
 .button {
-    margin: 1rem auto auto 6.5rem;
+    margin: 0.7rem auto auto 0.5rem;
     text-align: left;
 }
