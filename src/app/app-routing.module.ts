@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ListaAnimaisComponent } from './animais/lista-animais/lista-animais.component';
 import { NovoAnimalComponent } from './animais/novo-animal/novo-animal.component';
 import { LoginComponent } from './home/login/login.component';
+import { NovoUsuarioComponent } from './home/novo-usuario/novo-usuario.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,10 @@ const routes: Routes = [
   {
     path: 'novoanimal',
     component: NovoAnimalComponent
+  },
+  {
+    path: 'novousuario',
+    component: NovoUsuarioComponent
   }
 
 ];

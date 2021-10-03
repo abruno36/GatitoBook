@@ -56,5 +56,9 @@ export class NovoAnimalComponent implements OnInit {
     reader.onload = (event: any) => (this.preview = event.target.result);
     reader.readAsDataURL(file);
   }
+
+   cancel(): void {
+    this.router.navigate(['animais'])
+  }
 }
 

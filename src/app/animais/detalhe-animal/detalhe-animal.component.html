@@ -6,8 +6,8 @@
     <mat-card class="col-md-2 home1">
         <small>
                 <p class="text-left break-word">{{animal.description}}</p>
-                <i (click)="curtir()" class="fa fa-heart-o fa-2x mr-2 pull-left">{{animal.likes}}</i>  
-                <i class="fa fa-comment-o fa-2x mr-2 pull-left">{{animal.comments}}</i>
+                <i (click)="curtir()" class="fa fa-heart fa-2x mr-2 pull-left" >{{animal.likes}}</i>  
+                <i class="fa fa-comment fa-2x mr-2 pull-left">{{animal.comments}}</i>
                 <i (click)="excluir()" class="fa fa-trash-o fa-2x mr-2 pull-right"></i> 
             </small>
         <app-comentarios [id]="animalId" *ngIf="animal.allowComments; else warning"></app-comentarios>

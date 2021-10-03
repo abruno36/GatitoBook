@@ -27,3 +27,11 @@
     margin: 0.7rem auto auto 0.5rem;
     text-align: left;
 }
+
+.fa-heart {
+    color: red;
+}
+
+.fa-comment {
+    color: blue;
+}

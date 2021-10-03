@@ -29,5 +29,7 @@ login() {
       }
     );
   }
-
+novousuario(): void {
+    this.router.navigate(['novousuario'])
+  }
 }

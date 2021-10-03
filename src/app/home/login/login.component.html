@@ -9,7 +9,7 @@
             <app-mensagem *ngIf="campoSenha.invalid && campoSenha.touched" class="msg" mensagem="Senha obrigatória"></app-mensagem>
             <button class="btn btn-lg btn-primary btn-block" [disabled]="loginForm.invalid" type="submit ">Entrar</button>
             <p class="mt-4 mb-2 text-muted">Não tem login? Cadastre-se abaixo</p>
-            <a class="btn btn-lg btn-link btn-block cadastrar" [routerLink]="['novousuario']">Quero me cadastrar</a>
+            <a class="btn btn-lg btn-link btn-block cadastrar" (click)="novousuario()">Quero me cadastrar</a>
         </form>
 
     </div>

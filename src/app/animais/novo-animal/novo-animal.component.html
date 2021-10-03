@@ -29,16 +29,14 @@
                 <button [disabled]="formularioAnimal.invalid" type="submit" class="btn btn-primary btn-block">
           Enviar
         </button>
+                <button (click)="cancel()" type="submit" class="btn btn-warning btn-block"> Cancelar </button>
+            </div>
 
-                <a routerLink="['animais']" class="btn btn-secondary btn-block">Cancelar</a
-        >
-      </div>
-
-      <ng-template #uploaddiv>
-        <div class="text-center display-4">
-          Percentual de upload {{ percentualConcluido }} %
+            <ng-template template #uploaddiv>
+                <div class="text-center display-4">
+                    Percentual de upload {{ percentualConcluido }} %
+                </div>
+            </ng-template>
         </div>
-      </ng-template>
-    </div>
-  </form>
+    </form>
 </div>

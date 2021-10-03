@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -35,7 +37,8 @@ import { NavComponent } from './componentes/nav/nav.component';
     MatSidenavModule,
     MatListModule,
     MatToolbarModule,
-    
+    FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     AutenticacaoModule,
     MatButtonModule
