@@ -4,9 +4,7 @@
         <form class="form mt-4" [formGroup]="novoUsuarioForm" (submit)="cadastrar()" #userForm="ngForm">
             <div class="form-group">
                 <input placeholder="e-mail" class="form-control" formControlName="email" required/>
-                <app-mensagem *ngIf="
-        novoUsuarioForm.get('email')?.errors?.required &&
-        novoUsuarioForm.get('email')?.touched" mensagem="E-mail obrigatório">
+                <app-mensagem *ngIf="novoUsuarioForm.get('email')?.errors?.required && novoUsuarioForm.get('email')?.touched" mensagem="E-mail obrigatório">
                 </app-mensagem>
                 <app-mensagem *ngIf="novoUsuarioForm.get( 'email')?.errors?.email && novoUsuarioForm.get('email')?.touched " mensagem="E-mail no formato incorreto">
                 </app-mensagem>
