@@ -8,10 +8,8 @@ import { CartaoModule } from '../componentes/cartao/cartao.module';
 import { GradeFotosAnimaisComponent } from './grade-fotos-animais/grade-fotos-animais.component';
 import { DetalheAnimalComponent } from './detalhe-animal/detalhe-animal.component';
 import { ComentariosComponent } from './detalhe-animal/comentarios/comentarios.component';
-import { MensagemModule } from '../componentes/mensagem/mensagem.module';
-import { ReactiveFormsModule } from '@angular/forms';
-import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {FormsModule} from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
 import { NovoAnimalComponent } from './novo-animal/novo-animal.component';
 
@@ -28,6 +26,8 @@ import { NovoAnimalComponent } from './novo-animal/novo-animal.component';
   imports: [
     CommonModule,
     AnimaisRoutingModule,
+    MatInputModule,
+    FormsModule,
     CartaoModule,
     SharedModule
   ]
