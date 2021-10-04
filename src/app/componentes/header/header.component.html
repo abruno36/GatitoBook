@@ -1,6 +1,6 @@
 <mat-toolbar class="header">
     <span><img src="assets/img/gato.jpg" alt=""></span>
-    <span><h2>GATITO BOOK</h2></span>
+    <span><h2><a class="btn btn-lg btn-link btn-block home" (click)="home()">GATITO BOOK</a></h2></span>
     <div *ngIf="user$ | async as user" class="logout">
         <div *ngIf="user.name; else login">
             <i class="fa fa-user-circle mr-1"></i>

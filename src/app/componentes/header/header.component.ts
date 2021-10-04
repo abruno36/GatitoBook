@@ -18,4 +18,8 @@ export class HeaderComponent {
     this.usuarioService.logout();
     this.router.navigate(['']);
   }
+
+  home() {
+    this.router.navigate(['']);
+  }
 }
