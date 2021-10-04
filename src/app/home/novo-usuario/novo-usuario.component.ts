@@ -50,4 +50,8 @@ export class NovoUsuarioComponent implements OnInit {
       );
     }
   }
+
+  login(): void {
+    this.router.navigate(['login'])
+  }
 }

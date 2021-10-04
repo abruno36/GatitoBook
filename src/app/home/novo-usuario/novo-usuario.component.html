@@ -31,9 +31,9 @@
                 </app-mensagem>
             </mat-form-field>
 
-            <button class="btn btn-primary btn-block form" [disabled]="userForm.invalid" mat-stroked-button color="primary">Cadastro</button>
+            <button class="btn btn-lg btn-primary btn-block cadastro" [disabled]="userForm.invalid" type="submit">Cadastro</button>
         </form>
 
-        <p class="my-3">Já é um usuário?<a [routerLink]="['']"> Faça Login</a></p>
+        <p class="my-3">Já é um usuário?<a class="btn btn-lg btn-link btn-block login" (click)="login()"> Faça Login</a></p>
     </div>
 </div>
