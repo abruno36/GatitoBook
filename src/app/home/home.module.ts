@@ -5,6 +5,8 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { LoginComponent } from './login/login.component';
 
+import {MatInputModule} from '@angular/material/input';
+import {FormsModule} from '@angular/forms';
 
 import { NovoUsuarioComponent } from './novo-usuario/novo-usuario.component';
 import { SharedModule } from '../shared/shared.module';
@@ -14,7 +16,9 @@ import { SharedModule } from '../shared/shared.module';
   declarations: [HomeComponent, LoginComponent, NovoUsuarioComponent],
   imports: [CommonModule, 
             HomeRoutingModule, 
-            SharedModule],
+            SharedModule,
+            FormsModule,
+        MatInputModule],
   exports: [HomeComponent]
   
 })
